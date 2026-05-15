@@ -1,7 +1,7 @@
 /* @ts-check */
 const { WebSocketServer } = require('ws');
 
-const { logConfig } = require('../lib/util')
+const { logConfig, logError } = require('../lib/util')
 const log = require('../lib/util').logCustom('CURRENCY SVC', 'magenta')
 
 const currencySvc = require('./currency-service');
@@ -35,7 +35,14 @@ const registerCurrencyService = (active, CURRENCY_SVC_PORT = 3579) => {
       const id = clients.subscribe(emitter);
 
       socket.on('message', (message) => {
-        const { type, data } = JSON.parse(message.toString()) || {};
+        let type, data;
+
+        try {
+          ({ type, data } = JSON.parse(message.toString()) || {});
+        } catch (e) {
+          logError(`Parsing message failed: ${e.message}`);
+          return;
+        }
 
         if (type === 'request') {
           requestedCurrencies = data.currencies.map(c => c.toUpperCase());
