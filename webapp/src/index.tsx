@@ -7,7 +7,7 @@ import reportWebVitals from './reportWebVitals';
 // see the difference in webpack-bundle-analyzer
 if (process.env.NODE_ENV !== 'production') {
   // 1. eager bundle
-  const axe = require('@axe-core/react').default as typeof import('@axe-core/react').default;
+  const axe = require('@axe-core/react') as typeof import('@axe-core/react');
   axe(React, ReactDOM, 1000, {});
 
   // 2. lazy bundle
