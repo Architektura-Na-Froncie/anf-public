@@ -5,6 +5,8 @@ import { Link } from 'react-router-dom';
 import { colors } from 'ui/palette';
 import { Container } from '../layout';
 
+import { LogoutButton } from 'lessons/m10/auth/LogoutButton';
+
 const HeaderContainer = styled(Container)`
   display: flex;
   flex-direction: row nowrap;
@@ -62,6 +64,11 @@ const HeaderNav = styled.nav`
   }
 `;
 
+const LogoutLink = styled(LogoutButton)`
+  align-self: center;
+  min-width: fit-content;
+`;
+
 export const AppHeader: React.FC = () => {
   return <Header>
     <HeaderContainer>
@@ -73,6 +80,7 @@ export const AppHeader: React.FC = () => {
         <Link to="/authorize-device" data-testid="link-authorize-device">Autoryzuj urządzenie</Link>
         <Link to="/change-limits" data-testid="link-change-limits">Ustawienia limitów</Link>
         <Link to="/currency-exchange" data-testid="link-currency-exchange">Wymiana walut</Link>
+        <LogoutLink />
       </HeaderNav>
     </HeaderContainer>
   </Header>

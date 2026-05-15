@@ -15,5 +15,7 @@ import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
 configure({ adapter: new Adapter() });
 
 import { toHaveNoViolations } from 'jest-axe';
+import { toMatchImageSnapshot } from 'jest-image-snapshot';
 
 expect.extend(toHaveNoViolations)
+expect.extend({ toMatchImageSnapshot });

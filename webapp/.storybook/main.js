@@ -1,4 +1,5 @@
 const NodePolyfillPlugin = require("node-polyfill-webpack-plugin");
+const path = require("path");
 
 module.exports = {
   stories: [
@@ -40,6 +41,15 @@ module.exports = {
 
     // BREAKING CHANGE: webpack < 5 used to include polyfills for node.js core modules by default.
     config.plugins.push(new NodePolyfillPlugin());
+
+    // Ignore watching output files of e2e tests
+    config.watchOptions.ignored = [
+      '**/node_modules',
+      path.resolve(__dirname, "../src/lessons/m10/backstop_data"),
+      path.resolve(__dirname, "../src/lessons/m10/cypress"),
+      path.resolve(__dirname, "../src/lessons/m10/puppeteer"),
+      path.resolve(__dirname, "../src/lessons/m10/storyshots"),
+    ];
 
     return config;
   },

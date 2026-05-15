@@ -1,0 +1,1469 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Authorize Device DOM storyshots Authorize Device/Views Add Device Confirmation 1`] = `
+Array [
+  .c0 {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0 0 1.4rem;
+}
+
+<h2
+    className="c0"
+  >
+    Urządzenie zapisane jako zaufane
+  </h2>,
+  .c0 {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0 0 0.6rem;
+}
+
+<p
+    className="c0"
+  >
+    Przy następnym logowaniu z urządzenia 
+    <em>
+      Mój maczek
+    </em>
+     nie będziemy Ci już zawracali gitary unijnymi dyrektywami. Doceń to :)
+  </p>,
+  .c2 {
+  margin: 0;
+  padding: 8px 14px;
+  min-width: 4rem;
+  white-space: nowrap;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 16px;
+  font-weight: 700;
+  color: #0077B6;
+  background-color: #EDFAFD;
+  border: 1px solid #EDFAFD;
+  border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+
+.c2:disabled {
+  cursor: not-allowed;
+}
+
+.c2:disabled,
+.c2:disabled:hover {
+  color: rgb(255,255,255);
+  background-color: rgb(210,216,220);
+  border-color: rgb(210,216,220);
+}
+
+.c2:enabled:hover {
+  color: #0077B6;
+  background-color: rgb(255,255,255);
+  border-color: rgb(255,255,255);
+}
+
+.c2:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.c0 {
+  margin: 1.5rem 0 -.75rem -.75rem;
+  text-align: center;
+}
+
+.c0.c0 .c1 {
+  min-width: 8rem;
+  margin: 0 0 .75rem .75rem;
+}
+
+<div
+    className="c0"
+  >
+    <button
+      className="c1 c2"
+      data-testid="btn-close"
+      onClick={[Function]}
+    >
+      wjeżdżam w apkę
+    </button>
+  </div>,
+]
+`;
+
+exports[`Authorize Device DOM storyshots Authorize Device/Views Add Device Form 1`] = `
+Array [
+  .c0 {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0 0 1.4rem;
+}
+
+<h2
+    className="c0"
+  >
+    Zapisz to urządzenie jako zaufane
+  </h2>,
+  .c0 {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0 0 0.6rem;
+}
+
+<p
+    className="c0"
+  >
+    Jeszcze kilka inputów, checkboxów i buttonów i będziemy w domu... Zacznijmy od nazwy urządzenia.
+  </p>,
+  .c3 {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.c4 {
+  display: inline-block;
+  padding: .5rem;
+  margin: 0;
+  min-width: 180px;
+  background-color: rgb(255,255,255);
+  border: 2px solid rgb(210,216,220);
+  border-radius: 4px;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  cursor: initial;
+  box-sizing: border-box;
+}
+
+.c4.c4:focus {
+  border-color: #0077B6;
+  outline: none;
+}
+
+.c4.c4[disabled] {
+  background-color: #f6f6f6;
+}
+
+.c2 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5rem;
+  padding-top: .25rem;
+  word-break: break-word;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  max-width: 480px;
+  margin: 0 0 1rem;
+}
+
+.c0.c0 > .c1 {
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  max-width: 100%;
+  margin-bottom: .25rem;
+  text-align: left;
+}
+
+.c0.c0 > input,
+.c0.c0 > textarea,
+.c0.c0 > select {
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+}
+
+.c0 textarea {
+  resize: vertical;
+}
+
+<div
+    className="c0"
+  >
+    <label
+      className="c1 c2"
+      htmlFor="input-add-device-name"
+    >
+      <span
+        className="c3"
+      >
+        Nazwa urządzenia
+      </span>
+    </label>
+    <input
+      className="c4"
+      data-testid="input-add-device-name"
+      id="input-add-device-name"
+      onChange={[Function]}
+      type="text"
+      value="Mój komputer"
+    />
+  </div>,
+  .c0 {
+  display: block;
+  position: relative;
+  margin-bottom: 1rem;
+  max-width: calc(480px - 2.25rem);
+}
+
+.c2 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.c2:disabled {
+  cursor: not-allowed;
+}
+
+.c3 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 2px solid #0077B6;
+  border-radius: 4px;
+  box-sizing: border-box;
+  cursor: pointer;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+}
+
+.c3 svg {
+  display: block;
+  margin: 50% auto 0;
+  width: 80%;
+  height: 80%;
+  -webkit-transform: translateY(-50%) scale(0);
+  -ms-transform: translateY(-50%) scale(0);
+  transform: translateY(-50%) scale(0);
+  -webkit-transition: 100ms ease-in-out;
+  transition: 100ms ease-in-out;
+  fill: rgb(255,255,255);
+}
+
+.c1:focus-visible ~ .c3.c3 {
+  box-shadow: 0 0 0 1px #fff, 0 0 0 3px #0077B6;
+}
+
+.c1:checked ~ .c3.c3 {
+  background: #0077B6;
+}
+
+.c1:checked ~ .c3.c3 svg {
+  -webkit-transform: translateY(-50%) scale(1);
+  -ms-transform: translateY(-50%) scale(1);
+  transform: translateY(-50%) scale(1);
+  -webkit-transition-delay: 150ms;
+  transition-delay: 150ms;
+}
+
+.c1:disabled ~ .c3.c3 {
+  border-color: rgb(210,216,220);
+  background: rgb(210,216,220);
+  cursor: not-allowed;
+}
+
+.c1:disabled ~ .c3.c3 svg {
+  fill: #666;
+}
+
+.c4 {
+  display: block;
+  padding-left: 2.25rem;
+  min-height: 24px;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  line-height: 1.5rem;
+  text-align: left;
+}
+
+<div
+    className="c0"
+  >
+    <input
+      checked={false}
+      className="c1 c2"
+      data-testid="checkbox-add-device-confirmation"
+      id="checkbox-add-device-confirmation"
+      onChange={[Function]}
+      type="checkbox"
+    />
+    <div
+      className="c3"
+    >
+      <svg
+        height="100"
+        viewBox="0 0 43.333 43.333"
+        width="100"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M35.667 4.699L32.136 8.23l-16.72 16.717-4.468-3.937-3.75-3.281-6.593 7.53 3.78 3.282 8 7 3.5 3.094 3.313-3.313 20-20 3.53-3.53-7.061-7.095z"
+        />
+      </svg>
+    </div>
+    <label
+      className="c4"
+      htmlFor="checkbox-add-device-confirmation"
+    >
+      Uroczyście oświadczam, że jestem użytkownikiem tego urządzenia. Nie chce mi się każdorazowo podwójnie logować, więc dodajmy to urządzenie do "zaufanych" i miejmy to już za sobą...
+    </label>
+  </div>,
+  .c2 {
+  margin: 0;
+  padding: 8px 14px;
+  min-width: 4rem;
+  white-space: nowrap;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 16px;
+  font-weight: 700;
+  color: rgb(255,255,255);
+  background-color: #0096C7;
+  border: 1px solid #0096C7;
+  border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+
+.c2:disabled {
+  cursor: not-allowed;
+}
+
+.c2:disabled,
+.c2:disabled:hover {
+  color: rgb(255,255,255);
+  background-color: rgb(210,216,220);
+  border-color: rgb(210,216,220);
+}
+
+.c2:enabled:hover {
+  color: rgb(255,255,255);
+  background-color: #0077B6;
+  border-color: #0077B6;
+}
+
+.c2:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.c0 {
+  margin: 1.5rem 0 -.75rem -.75rem;
+  text-align: center;
+}
+
+.c0.c0 .c1 {
+  min-width: 8rem;
+  margin: 0 0 .75rem .75rem;
+}
+
+<div
+    className="c0"
+  >
+    <button
+      className="c1 c2"
+      data-testid="btn-add-device-name-submit"
+      disabled={true}
+      onClick={[Function]}
+    >
+      zapisz urządzenie jako zaufane
+    </button>
+  </div>,
+]
+`;
+
+exports[`Authorize Device DOM storyshots Authorize Device/Views Add Device Token 1`] = `
+Array [
+  .c0 {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0 0 1.4rem;
+}
+
+<h2
+    className="c0"
+  >
+    Zapisz to urządzenie jako zaufane
+  </h2>,
+  .c0 {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0 0 0.6rem;
+}
+
+<p
+    className="c0"
+  >
+    Już za chwilę urządzenie "
+    Mój maczek
+    " zostanie zapisane jako zaufane. Jest radość.
+  </p>,
+  .c0 {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0 0 0.6rem;
+}
+
+<p
+    className="c0"
+  >
+    Unijna dyrektywa PSD2 narzuca obowiązek 
+    <em>
+      silnego uwierzytelnienia klienta
+    </em>
+    . Cokolwiek to oznacza. Obadaj telefon, bo wysłaliśmy Ci SMSa.
+  </p>,
+  .c0 {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0 0 0.6rem;
+}
+
+<p
+    className="c0"
+  >
+    <a
+      href="https://pl.wikipedia.org/wiki/Payment_Services_Directive#Poprawiona_dyrektywa_w_sprawie_us%C5%82ug_p%C5%82atniczych_(PSD2)"
+    >
+      Dlaczego mi to robicie?...
+    </a>
+  </p>,
+  .c3 {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.c4 {
+  display: inline-block;
+  padding: .5rem;
+  margin: 0;
+  min-width: 180px;
+  background-color: rgb(255,255,255);
+  border: 2px solid rgb(210,216,220);
+  border-radius: 4px;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  cursor: initial;
+  box-sizing: border-box;
+}
+
+.c4.c4:focus {
+  border-color: #0077B6;
+  outline: none;
+}
+
+.c4.c4[disabled] {
+  background-color: #f6f6f6;
+}
+
+.c2 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5rem;
+  padding-top: .25rem;
+  word-break: break-word;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  max-width: 480px;
+  margin: 0 0 1rem;
+}
+
+.c0.c0 > .c1 {
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  max-width: 100%;
+  margin-bottom: .25rem;
+  text-align: left;
+}
+
+.c0.c0 > input,
+.c0.c0 > textarea,
+.c0.c0 > select {
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+}
+
+.c0 textarea {
+  resize: vertical;
+}
+
+<div
+    className="c0"
+  >
+    <label
+      className="c1 c2"
+      htmlFor="input-add-device-password"
+    >
+      <span
+        className="c3"
+      >
+        Wpisz hasło SMS
+      </span>
+    </label>
+    <input
+      className="c4"
+      data-testid="input-add-device-password"
+      id="input-add-device-password"
+      onChange={[Function]}
+      type="password"
+      value=""
+    />
+  </div>,
+  .c2 {
+  margin: 0;
+  padding: 8px 14px;
+  min-width: 4rem;
+  white-space: nowrap;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 16px;
+  font-weight: 700;
+  color: rgb(255,255,255);
+  background-color: #0096C7;
+  border: 1px solid #0096C7;
+  border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+
+.c2:disabled {
+  cursor: not-allowed;
+}
+
+.c2:disabled,
+.c2:disabled:hover {
+  color: rgb(255,255,255);
+  background-color: rgb(210,216,220);
+  border-color: rgb(210,216,220);
+}
+
+.c2:enabled:hover {
+  color: rgb(255,255,255);
+  background-color: #0077B6;
+  border-color: #0077B6;
+}
+
+.c2:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.c3 {
+  margin: 0;
+  padding: 8px 14px;
+  min-width: 4rem;
+  white-space: nowrap;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 16px;
+  font-weight: 700;
+  color: #0077B6;
+  background-color: #EDFAFD;
+  border: 1px solid #EDFAFD;
+  border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+
+.c3:disabled {
+  cursor: not-allowed;
+}
+
+.c3:disabled,
+.c3:disabled:hover {
+  color: rgb(255,255,255);
+  background-color: rgb(210,216,220);
+  border-color: rgb(210,216,220);
+}
+
+.c3:enabled:hover {
+  color: #0077B6;
+  background-color: rgb(255,255,255);
+  border-color: rgb(255,255,255);
+}
+
+.c3:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.c0 {
+  margin: 1.5rem 0 -.75rem -.75rem;
+  text-align: center;
+}
+
+.c0.c0 .c1 {
+  min-width: 8rem;
+  margin: 0 0 .75rem .75rem;
+}
+
+<div
+    className="c0"
+  >
+    <button
+      className="c1 c2"
+      data-testid="btn-token-submit"
+      onClick={[Function]}
+    >
+      potwierdź
+    </button>
+    <button
+      className="c1 c3"
+      data-testid="btn-token-reset"
+      onClick={[Function]}
+    >
+      wyślij ponownie kod
+    </button>
+    <button
+      className="c1 c3"
+      data-testid="btn-token-cancel"
+      onClick={[Function]}
+    >
+      zaniechaj
+    </button>
+  </div>,
+]
+`;
+
+exports[`Authorize Device DOM storyshots Authorize Device/Views Allow Once Token 1`] = `
+Array [
+  .c0 {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0 0 1.4rem;
+}
+
+<h2
+    className="c0"
+  >
+    Jednorazowy wjazd do apki
+  </h2>,
+  .c0 {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0 0 0.6rem;
+}
+
+<p
+    className="c0"
+  >
+    Unijna dyrektywa PSD2 narzuca obowiązek 
+    <em>
+      silnego uwierzytelnienia klienta
+    </em>
+    . Cokolwiek to oznacza. Obadaj telefon, bo wysłaliśmy Ci SMSa.
+  </p>,
+  .c0 {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0 0 0.6rem;
+}
+
+<p
+    className="c0"
+  >
+    <a
+      href="https://pl.wikipedia.org/wiki/Payment_Services_Directive#Poprawiona_dyrektywa_w_sprawie_us%C5%82ug_p%C5%82atniczych_(PSD2)"
+    >
+      Dlaczego mi to robicie?...
+    </a>
+  </p>,
+  .c3 {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.c4 {
+  display: inline-block;
+  padding: .5rem;
+  margin: 0;
+  min-width: 180px;
+  background-color: rgb(255,255,255);
+  border: 2px solid rgb(210,216,220);
+  border-radius: 4px;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  cursor: initial;
+  box-sizing: border-box;
+}
+
+.c4.c4:focus {
+  border-color: #0077B6;
+  outline: none;
+}
+
+.c4.c4[disabled] {
+  background-color: #f6f6f6;
+}
+
+.c2 {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5rem;
+  padding-top: .25rem;
+  word-break: break-word;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: column wrap;
+  -ms-flex-flow: column wrap;
+  flex-flow: column wrap;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  max-width: 480px;
+  margin: 0 0 1rem;
+}
+
+.c0.c0 > .c1 {
+  -webkit-flex: 0 0 100%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  max-width: 100%;
+  margin-bottom: .25rem;
+  text-align: left;
+}
+
+.c0.c0 > input,
+.c0.c0 > textarea,
+.c0.c0 > select {
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+}
+
+.c0 textarea {
+  resize: vertical;
+}
+
+<div
+    className="c0"
+  >
+    <label
+      className="c1 c2"
+      htmlFor="input-allow-once-password"
+    >
+      <span
+        className="c3"
+      >
+        Wpisz hasło SMS
+      </span>
+    </label>
+    <input
+      className="c4"
+      data-testid="input-allow-once-password"
+      id="input-allow-once-password"
+      onChange={[Function]}
+      type="password"
+      value=""
+    />
+  </div>,
+  .c2 {
+  margin: 0;
+  padding: 8px 14px;
+  min-width: 4rem;
+  white-space: nowrap;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 16px;
+  font-weight: 700;
+  color: rgb(255,255,255);
+  background-color: #0096C7;
+  border: 1px solid #0096C7;
+  border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+
+.c2:disabled {
+  cursor: not-allowed;
+}
+
+.c2:disabled,
+.c2:disabled:hover {
+  color: rgb(255,255,255);
+  background-color: rgb(210,216,220);
+  border-color: rgb(210,216,220);
+}
+
+.c2:enabled:hover {
+  color: rgb(255,255,255);
+  background-color: #0077B6;
+  border-color: #0077B6;
+}
+
+.c2:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.c3 {
+  margin: 0;
+  padding: 8px 14px;
+  min-width: 4rem;
+  white-space: nowrap;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 16px;
+  font-weight: 700;
+  color: #0077B6;
+  background-color: #EDFAFD;
+  border: 1px solid #EDFAFD;
+  border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+
+.c3:disabled {
+  cursor: not-allowed;
+}
+
+.c3:disabled,
+.c3:disabled:hover {
+  color: rgb(255,255,255);
+  background-color: rgb(210,216,220);
+  border-color: rgb(210,216,220);
+}
+
+.c3:enabled:hover {
+  color: #0077B6;
+  background-color: rgb(255,255,255);
+  border-color: rgb(255,255,255);
+}
+
+.c3:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.c0 {
+  margin: 1.5rem 0 -.75rem -.75rem;
+  text-align: center;
+}
+
+.c0.c0 .c1 {
+  min-width: 8rem;
+  margin: 0 0 .75rem .75rem;
+}
+
+<div
+    className="c0"
+  >
+    <button
+      className="c1 c2"
+      data-testid="btn-token-submit"
+      onClick={[Function]}
+    >
+      potwierdź
+    </button>
+    <button
+      className="c1 c3"
+      data-testid="btn-token-cancel"
+      onClick={[Function]}
+    >
+      zaniechaj, zmieniłem/am zdanie
+    </button>
+  </div>,
+]
+`;
+
+exports[`Authorize Device DOM storyshots Authorize Device/Views Choose Method 1`] = `
+Array [
+  .c0 {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0 0 1.4rem;
+}
+
+<h2
+    className="c0"
+  >
+    Nieznane urządzenie
+  </h2>,
+  .c0 {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0 0 0.6rem;
+}
+
+<p
+    className="c0"
+  >
+    Mistrzu, jest sprawa... nie mamy pewności, że Ty to Ty. Musimy zautoryzować urządzenie, z którego do nas klikasz.
+  </p>,
+  .c0 {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0 0 0.6rem;
+}
+
+<p
+    className="c0"
+  >
+    No i albo zapisujemy Twoje urządzenie jako zaufane (i nie zobaczysz więcej tego komunikatu) - albo każdorazowo będziesz autoryzować urządzenie, z którego próbujesz sie zalogować do apki.
+  </p>,
+  .c0 {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0 0 0.6rem;
+}
+
+<p
+    className="c0"
+  >
+    Dobrze się zastanów. Nam to rybka.
+  </p>,
+  .c2 {
+  margin: 0;
+  padding: 8px 14px;
+  min-width: 4rem;
+  white-space: nowrap;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 16px;
+  font-weight: 700;
+  color: rgb(255,255,255);
+  background-color: #0096C7;
+  border: 1px solid #0096C7;
+  border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+
+.c2:disabled {
+  cursor: not-allowed;
+}
+
+.c2:disabled,
+.c2:disabled:hover {
+  color: rgb(255,255,255);
+  background-color: rgb(210,216,220);
+  border-color: rgb(210,216,220);
+}
+
+.c2:enabled:hover {
+  color: rgb(255,255,255);
+  background-color: #0077B6;
+  border-color: #0077B6;
+}
+
+.c2:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.c3 {
+  margin: 0;
+  padding: 8px 14px;
+  min-width: 4rem;
+  white-space: nowrap;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 16px;
+  font-weight: 700;
+  color: #0077B6;
+  background-color: #EDFAFD;
+  border: 1px solid #EDFAFD;
+  border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+
+.c3:disabled {
+  cursor: not-allowed;
+}
+
+.c3:disabled,
+.c3:disabled:hover {
+  color: rgb(255,255,255);
+  background-color: rgb(210,216,220);
+  border-color: rgb(210,216,220);
+}
+
+.c3:enabled:hover {
+  color: #0077B6;
+  background-color: rgb(255,255,255);
+  border-color: rgb(255,255,255);
+}
+
+.c3:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.c0 {
+  margin: 1.5rem 0 -.75rem -.75rem;
+  text-align: center;
+}
+
+.c0.c0 .c1 {
+  min-width: 8rem;
+  margin: 0 0 .75rem .75rem;
+}
+
+<div
+    className="c0"
+  >
+    <button
+      className="c1 c2"
+      data-testid="btn-choose-add-device"
+      onClick={[Function]}
+    >
+      zapisz to urządzenie jako zaufane
+    </button>
+    <button
+      className="c1 c2"
+      data-testid="btn-choose-allow-once"
+      onClick={[Function]}
+    >
+      jednorazowy wjazd do apki
+    </button>
+    <button
+      className="c1 c3"
+      data-testid="btn-choose-logout"
+      onClick={[Function]}
+    >
+      wyloguj
+    </button>
+  </div>,
+]
+`;
+
+exports[`Authorize Device DOM storyshots Lessons/M6 State Machines/Authorize Device Authorize Device Process Primitive 1`] = `
+.c1 {
+  margin: 0;
+  padding: 8px 14px;
+  min-width: 4rem;
+  white-space: nowrap;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 16px;
+  font-weight: 700;
+  color: rgb(255,255,255);
+  background-color: #0096C7;
+  border: 1px solid #0096C7;
+  border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+
+.c1:disabled {
+  cursor: not-allowed;
+}
+
+.c1:disabled,
+.c1:disabled:hover {
+  color: rgb(255,255,255);
+  background-color: rgb(210,216,220);
+  border-color: rgb(210,216,220);
+}
+
+.c1:enabled:hover {
+  color: rgb(255,255,255);
+  background-color: #0077B6;
+  border-color: #0077B6;
+}
+
+.c1:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.c0 {
+  position: relative;
+  margin: auto;
+  padding: 45px 30px;
+  background: #fff;
+  box-shadow: 1px 1px 4px rgba(0,0,0,.05);
+  max-width: 540px;
+  min-height: 240px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+<div
+  className="c0"
+>
+  <button
+    className="c1"
+    data-testid="btn-authorize-device"
+    onClick={[Function]}
+  >
+    autoryzuj urządzenie
+  </button>
+</div>
+`;
+
+exports[`Authorize Device DOM storyshots Lessons/M6 State Machines/Authorize Device Authorize Device Process Redux 1`] = `
+.c1 {
+  margin: 0;
+  padding: 8px 14px;
+  min-width: 4rem;
+  white-space: nowrap;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 16px;
+  font-weight: 700;
+  color: rgb(255,255,255);
+  background-color: #0096C7;
+  border: 1px solid #0096C7;
+  border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+
+.c1:disabled {
+  cursor: not-allowed;
+}
+
+.c1:disabled,
+.c1:disabled:hover {
+  color: rgb(255,255,255);
+  background-color: rgb(210,216,220);
+  border-color: rgb(210,216,220);
+}
+
+.c1:enabled:hover {
+  color: rgb(255,255,255);
+  background-color: #0077B6;
+  border-color: #0077B6;
+}
+
+.c1:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.c0 {
+  position: relative;
+  margin: auto;
+  padding: 45px 30px;
+  background: #fff;
+  box-shadow: 1px 1px 4px rgba(0,0,0,.05);
+  max-width: 540px;
+  min-height: 240px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+<div
+  className="c0"
+>
+  <button
+    className="c1"
+    data-testid="btn-authorize-device"
+    onClick={[Function]}
+  >
+    autoryzuj urządzenie
+  </button>
+</div>
+`;
+
+exports[`Authorize Device DOM storyshots Lessons/M6 State Machines/Authorize Device Authorize Device Process Union 1`] = `
+.c1 {
+  margin: 0;
+  padding: 8px 14px;
+  min-width: 4rem;
+  white-space: nowrap;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 16px;
+  font-weight: 700;
+  color: rgb(255,255,255);
+  background-color: #0096C7;
+  border: 1px solid #0096C7;
+  border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+
+.c1:disabled {
+  cursor: not-allowed;
+}
+
+.c1:disabled,
+.c1:disabled:hover {
+  color: rgb(255,255,255);
+  background-color: rgb(210,216,220);
+  border-color: rgb(210,216,220);
+}
+
+.c1:enabled:hover {
+  color: rgb(255,255,255);
+  background-color: #0077B6;
+  border-color: #0077B6;
+}
+
+.c1:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.c0 {
+  position: relative;
+  margin: auto;
+  padding: 45px 30px;
+  background: #fff;
+  box-shadow: 1px 1px 4px rgba(0,0,0,.05);
+  max-width: 540px;
+  min-height: 240px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+<div
+  className="c0"
+>
+  <button
+    className="c1"
+    data-testid="btn-authorize-device"
+    onClick={[Function]}
+  >
+    autoryzuj urządzenie
+  </button>
+</div>
+`;
+
+exports[`Authorize Device DOM storyshots Lessons/M6 State Machines/Authorize Device Authorize Device Process X State 1`] = `
+.c1 {
+  margin: 0;
+  padding: 8px 14px;
+  min-width: 4rem;
+  white-space: nowrap;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 16px;
+  font-weight: 700;
+  color: rgb(255,255,255);
+  background-color: #0096C7;
+  border: 1px solid #0096C7;
+  border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+
+.c1:disabled {
+  cursor: not-allowed;
+}
+
+.c1:disabled,
+.c1:disabled:hover {
+  color: rgb(255,255,255);
+  background-color: rgb(210,216,220);
+  border-color: rgb(210,216,220);
+}
+
+.c1:enabled:hover {
+  color: rgb(255,255,255);
+  background-color: #0077B6;
+  border-color: #0077B6;
+}
+
+.c1:focus:not(:focus-visible) {
+  outline: none;
+}
+
+.c0 {
+  position: relative;
+  margin: auto;
+  padding: 45px 30px;
+  background: #fff;
+  box-shadow: 1px 1px 4px rgba(0,0,0,.05);
+  max-width: 540px;
+  min-height: 240px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+<div
+  className="c0"
+>
+  <button
+    className="c1"
+    data-testid="btn-authorize-device"
+    onClick={[Function]}
+  >
+    autoryzuj urządzenie
+  </button>
+</div>
+`;
+
+exports[`Authorize Device DOM storyshots Lessons/M6 State Machines/Authorize Device In Modal 1`] = `
+.c0 {
+  margin: 0;
+  padding: 8px 14px;
+  min-width: 4rem;
+  white-space: nowrap;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 16px;
+  font-weight: 700;
+  color: rgb(255,255,255);
+  background-color: #0096C7;
+  border: 1px solid #0096C7;
+  border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+}
+
+.c0:disabled,
+.c0:disabled:hover {
+  color: rgb(255,255,255);
+  background-color: rgb(210,216,220);
+  border-color: rgb(210,216,220);
+}
+
+.c0:enabled:hover {
+  color: rgb(255,255,255);
+  background-color: #0077B6;
+  border-color: #0077B6;
+}
+
+.c0:focus:not(:focus-visible) {
+  outline: none;
+}
+
+<button
+  className="c0"
+  onClick={[Function]}
+>
+  add device
+</button>
+`;

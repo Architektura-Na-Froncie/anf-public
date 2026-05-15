@@ -4,7 +4,7 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 
 import { AppProviders } from './AppProviders';
-import App from './App';
+import { AuthenticationFacade as App } from 'lessons/m10/auth/AuthenticationFacade';
 
 // see the difference in webpack-bundle-analyzer
 if (process.env.NODE_ENV !== 'production') {

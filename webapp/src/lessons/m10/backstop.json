@@ -1,0 +1,99 @@
+{
+  "id": "backstop_default",
+  "viewports": [
+    {
+      "label": "phone",
+      "width": 320,
+      "height": 480
+    },
+    {
+      "label": "tablet",
+      "width": 1024,
+      "height": 768
+    }
+  ],
+  "onBeforeScript": "puppet/onBefore.js",
+  "onReadyScript": "puppet/onReady.js",
+  "scenarios": [
+    {
+      "label": "ANF Homepage",
+      "url": "http://localhost:3010/",
+      "referenceUrl": "",
+      "readyEvent": "",
+      "readySelector": "",
+      "delay": 0,
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "hoverSelector": "",
+      "clickSelector": "",
+      "postInteractionWait": 0,
+      "selectors": [],
+      "selectorExpansion": true,
+      "expect": 0,
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Authorize Device / Choose Method",
+      "url": "http://localhost:6006/iframe.html?id=authorize-device-views--choose-method",
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Authorize Device / Add Device Form",
+      "url": "http://localhost:6006/iframe.html?id=authorize-device-views--add-device-form",
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true,
+      "postInteractionWait": 500,
+      "clickSelector": ["#checkbox-add-device-confirmation"],
+      "keyPressSelectors": [
+        {
+          "selector": "#input-add-device-name",
+          "keyPress": "januszek"
+        }
+      ]
+    },
+    {
+      "label": "Authorize Device step / Allow Once Token",
+      "url": "http://localhost:6006/iframe.html?id=authorize-device-views--allow-once-token",
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Authorize Device / Add Device Token",
+      "url": "http://localhost:6006/iframe.html?id=authorize-device-views--add-device-token",
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    },
+    {
+      "label": "Authorize Device / Add Device Confirmation",
+      "url": "http://localhost:6006/iframe.html?id=authorize-device-views--add-device-confirmation",
+      "misMatchThreshold" : 0.1,
+      "requireSameDimensions": true
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "src/lessons/m10/backstop_data/bitmaps_reference",
+    "bitmaps_test": "src/lessons/m10/backstop_data/bitmaps_test",
+    "engine_scripts": "src/lessons/m10/backstop_data/engine_scripts",
+    "html_report": "src/lessons/m10/backstop_data/html_report",
+    "ci_report": "src/lessons/m10/backstop_data/ci_report"
+  },
+  "report": ["browser"],
+  "engine": "puppeteer",
+  "engineOptions": {
+    "args": ["--no-sandbox"]
+  },
+  "asyncCaptureLimit": 5,
+  "asyncCompareLimit": 50,
+  "debug": false,
+  "debugWindow": false,
+  "resembleOutputOptions": {
+    "errorColor": {
+      "red": 255,
+      "green": 165,
+      "blue": 0
+    },
+    "transparency": 0.3
+  }
+}

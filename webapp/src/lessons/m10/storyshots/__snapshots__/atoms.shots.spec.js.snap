@@ -1,0 +1,625 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Atoms DOM storyshots Atoms Loader 1`] = `
+<svg
+  data-testid="img-loader"
+  height="80px"
+  preserveAspectRatio="xMidYMid"
+  style={
+    Object {
+      "display": "block",
+      "margin": "auto",
+    }
+  }
+  viewBox="0 0 100 100"
+  width="80px"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns-xlink="http://www.w3.org/1999/xlink"
+>
+  <path
+    d="M7 50A43 43 0 0 0 93 50A43 46 0 0 1 7 50"
+    fill="#0077B6"
+    stroke="none"
+  >
+    <animateTransform
+      attributeName="transform"
+      dur="1s"
+      keyTimes="0;1"
+      repeatCount="indefinite"
+      type="rotate"
+      values="0 50 51.5;360 50 51.5"
+    />
+  </path>
+</svg>
+`;
+
+exports[`Atoms DOM storyshots Atoms Typography 1`] = `
+Array [
+  .c0 {
+  font-size: 2.8rem;
+  font-weight: 300;
+  line-height: 1.6;
+  margin: 0 0 1.6rem;
+}
+
+<h1
+    className="c0"
+  >
+    h1. 
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  </h1>,
+  .c0 {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0 0 1.4rem;
+}
+
+<h2
+    className="c0"
+  >
+    h2. 
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  </h2>,
+  .c0 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0 0 1.2rem;
+}
+
+<h3
+    className="c0"
+  >
+    h3. 
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  </h3>,
+  .c0 {
+  font-size: 1.15rem;
+  font-weight: 300;
+  line-height: 1.1;
+  margin: 0 0 1.1rem;
+}
+
+<h4
+    className="c0"
+  >
+    h4. 
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  </h4>,
+  .c0 {
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.2;
+  margin: 0 0 0.6rem;
+}
+
+<p
+    className="c0"
+  >
+    body. 
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  </p>,
+  .c0 {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 1rem;
+}
+
+<p
+    className="c0"
+  >
+    bold. 
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  </p>,
+  .c0 {
+  font-size: 1rem;
+  font-weight: 200;
+  line-height: 1.2;
+  margin: 0 0 1rem;
+}
+
+<p
+    className="c0"
+  >
+    decorated. 
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  </p>,
+]
+`;
+
+exports[`Atoms DOM storyshots Atoms/Button Disabled 1`] = `
+.c0 {
+  margin: 0;
+  padding: 8px 14px;
+  min-width: 4rem;
+  white-space: nowrap;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 16px;
+  font-weight: 700;
+  color: rgb(255,255,255);
+  background-color: #0096C7;
+  border: 1px solid #0096C7;
+  border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+}
+
+.c0:disabled,
+.c0:disabled:hover {
+  color: rgb(255,255,255);
+  background-color: rgb(210,216,220);
+  border-color: rgb(210,216,220);
+}
+
+.c0:enabled:hover {
+  color: rgb(255,255,255);
+  background-color: #0077B6;
+  border-color: #0077B6;
+}
+
+.c0:focus:not(:focus-visible) {
+  outline: none;
+}
+
+<button
+  className="c0"
+  disabled={true}
+>
+  Primary action
+</button>
+`;
+
+exports[`Atoms DOM storyshots Atoms/Button Outlined 1`] = `
+.c0 {
+  margin: 0;
+  padding: 8px 14px;
+  min-width: 4rem;
+  white-space: nowrap;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 16px;
+  font-weight: 700;
+  color: #36A18B;
+  background-color: transparent;
+  border: 1px solid #36A18B;
+  border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+}
+
+.c0:disabled,
+.c0:disabled:hover {
+  color: rgb(255,255,255);
+  background-color: rgb(210,216,220);
+  border-color: rgb(210,216,220);
+}
+
+.c0:enabled:hover {
+  color: rgb(255,255,255);
+  background-color: #36A18B;
+  border-color: #36A18B;
+}
+
+.c0:focus:not(:focus-visible) {
+  outline: none;
+}
+
+<button
+  className="c0"
+>
+  Outlined action
+</button>
+`;
+
+exports[`Atoms DOM storyshots Atoms/Button Primary 1`] = `
+.c0 {
+  margin: 0;
+  padding: 8px 14px;
+  min-width: 4rem;
+  white-space: nowrap;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 16px;
+  font-weight: 700;
+  color: rgb(255,255,255);
+  background-color: #0096C7;
+  border: 1px solid #0096C7;
+  border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+}
+
+.c0:disabled,
+.c0:disabled:hover {
+  color: rgb(255,255,255);
+  background-color: rgb(210,216,220);
+  border-color: rgb(210,216,220);
+}
+
+.c0:enabled:hover {
+  color: rgb(255,255,255);
+  background-color: #0077B6;
+  border-color: #0077B6;
+}
+
+.c0:focus:not(:focus-visible) {
+  outline: none;
+}
+
+<button
+  className="c0"
+>
+  Primary action
+</button>
+`;
+
+exports[`Atoms DOM storyshots Atoms/Button Secondary 1`] = `
+.c0 {
+  margin: 0;
+  padding: 8px 14px;
+  min-width: 4rem;
+  white-space: nowrap;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 16px;
+  font-weight: 700;
+  color: #0077B6;
+  background-color: #EDFAFD;
+  border: 1px solid #EDFAFD;
+  border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+
+.c0:disabled {
+  cursor: not-allowed;
+}
+
+.c0:disabled,
+.c0:disabled:hover {
+  color: rgb(255,255,255);
+  background-color: rgb(210,216,220);
+  border-color: rgb(210,216,220);
+}
+
+.c0:enabled:hover {
+  color: #0077B6;
+  background-color: rgb(255,255,255);
+  border-color: rgb(255,255,255);
+}
+
+.c0:focus:not(:focus-visible) {
+  outline: none;
+}
+
+<button
+  className="c0"
+>
+  Secondary action
+</button>
+`;
+
+exports[`Atoms DOM storyshots Atoms/Dropdown Default 1`] = `
+.c0 {
+  display: inline-block;
+  padding: .5rem;
+  margin: 0;
+  min-width: 180px;
+  background-color: rgb(255,255,255);
+  border: 2px solid rgb(210,216,220);
+  border-radius: 4px;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  cursor: initial;
+  box-sizing: border-box;
+  padding-right: 2rem;
+  padding-left: .5rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,<svg xmlns='http://www.w3.org/2000/svg' width='292.4' height='292.4'><path fill='rgba(102,102,102,1)' d='M287 69.4a17.6 17.6 0 0 0-13-5.4H18.4c-5 0-9.3 1.8-12.9 5.4A17.6 17.6 0 0 0 0 82.2c0 5 1.8 9.3 5.4 12.9l128 127.9c3.6 3.6 7.8 5.4 12.8 5.4s9.2-1.8 12.8-5.4L287 95c3.5-3.5 5.4-7.8 5.4-12.8 0-5-1.9-9.2-5.5-12.8z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right .7em top 50%;
+  background-size: .65em auto;
+}
+
+.c0.c0:focus {
+  border-color: #0077B6;
+  outline: none;
+}
+
+.c0.c0[disabled] {
+  background-color: #f6f6f6;
+}
+
+.c0.c0[disabled] {
+  cursor: not-allowed;
+}
+
+<select
+  className="c0"
+  onChange={[Function]}
+  value=""
+>
+  <option
+    value="foo"
+  >
+    Foo
+  </option>
+  <option
+    value="bar"
+  >
+    Bar
+  </option>
+  <option
+    value="baz"
+  >
+    Baz
+  </option>
+</select>
+`;
+
+exports[`Atoms DOM storyshots Atoms/Dropdown Disabled 1`] = `
+.c0 {
+  display: inline-block;
+  padding: .5rem;
+  margin: 0;
+  min-width: 180px;
+  background-color: rgb(255,255,255);
+  border: 2px solid rgb(210,216,220);
+  border-radius: 4px;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  cursor: not-allowed;
+  box-sizing: border-box;
+  padding-right: 2rem;
+  padding-left: .5rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,<svg xmlns='http://www.w3.org/2000/svg' width='292.4' height='292.4'><path fill='rgba(210,216,220,1)' d='M287 69.4a17.6 17.6 0 0 0-13-5.4H18.4c-5 0-9.3 1.8-12.9 5.4A17.6 17.6 0 0 0 0 82.2c0 5 1.8 9.3 5.4 12.9l128 127.9c3.6 3.6 7.8 5.4 12.8 5.4s9.2-1.8 12.8-5.4L287 95c3.5-3.5 5.4-7.8 5.4-12.8 0-5-1.9-9.2-5.5-12.8z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right .7em top 50%;
+  background-size: .65em auto;
+}
+
+.c0.c0:focus {
+  border-color: #0077B6;
+  outline: none;
+}
+
+.c0.c0[disabled] {
+  background-color: #f6f6f6;
+}
+
+.c0.c0[disabled] {
+  cursor: not-allowed;
+}
+
+<select
+  className="c0"
+  disabled={true}
+  onChange={[Function]}
+  value=""
+>
+  <option
+    value="foo"
+  >
+    Foo
+  </option>
+  <option
+    value="bar"
+  >
+    Bar
+  </option>
+  <option
+    value="baz"
+  >
+    Baz
+  </option>
+</select>
+`;
+
+exports[`Atoms DOM storyshots Atoms/Dropdown Error 1`] = `
+.c0 {
+  display: inline-block;
+  padding: .5rem;
+  margin: 0;
+  min-width: 180px;
+  background-color: rgb(255,255,255);
+  border: 2px solid rgb(255,0,0);
+  border-radius: 4px;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  cursor: initial;
+  box-sizing: border-box;
+  padding-right: 2rem;
+  padding-left: .5rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,<svg xmlns='http://www.w3.org/2000/svg' width='292.4' height='292.4'><path fill='rgba(102,102,102,1)' d='M287 69.4a17.6 17.6 0 0 0-13-5.4H18.4c-5 0-9.3 1.8-12.9 5.4A17.6 17.6 0 0 0 0 82.2c0 5 1.8 9.3 5.4 12.9l128 127.9c3.6 3.6 7.8 5.4 12.8 5.4s9.2-1.8 12.8-5.4L287 95c3.5-3.5 5.4-7.8 5.4-12.8 0-5-1.9-9.2-5.5-12.8z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right .7em top 50%;
+  background-size: .65em auto;
+}
+
+.c0.c0:focus {
+  border-color: rgb(255,0,0);
+  outline: none;
+}
+
+.c0.c0[disabled] {
+  background-color: #f6f6f6;
+}
+
+.c0.c0[disabled] {
+  cursor: not-allowed;
+}
+
+<select
+  className="c0"
+  onChange={[Function]}
+  value=""
+>
+  <option
+    value="foo"
+  >
+    Foo
+  </option>
+  <option
+    value="bar"
+  >
+    Bar
+  </option>
+  <option
+    value="baz"
+  >
+    Baz
+  </option>
+</select>
+`;
+
+exports[`Atoms DOM storyshots Atoms/TextArea Default 1`] = `
+.c0 {
+  display: inline-block;
+  padding: .5rem;
+  margin: 0;
+  min-width: 180px;
+  background-color: rgb(255,255,255);
+  border: 2px solid rgb(210,216,220);
+  border-radius: 4px;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  cursor: initial;
+  box-sizing: border-box;
+  height: 100px;
+  min-height: 50px;
+  vertical-align: top;
+}
+
+.c0.c0:focus {
+  border-color: #0077B6;
+  outline: none;
+}
+
+.c0.c0[disabled] {
+  background-color: #f6f6f6;
+}
+
+<textarea
+  className="c0"
+  defaultValue="Text"
+/>
+`;
+
+exports[`Atoms DOM storyshots Atoms/TextArea Disabled 1`] = `
+.c0 {
+  display: inline-block;
+  padding: .5rem;
+  margin: 0;
+  min-width: 180px;
+  background-color: rgb(255,255,255);
+  border: 2px solid rgb(210,216,220);
+  border-radius: 4px;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  cursor: not-allowed;
+  box-sizing: border-box;
+  height: 100px;
+  min-height: 50px;
+  vertical-align: top;
+}
+
+.c0.c0:focus {
+  border-color: #0077B6;
+  outline: none;
+}
+
+.c0.c0[disabled] {
+  background-color: #f6f6f6;
+}
+
+<textarea
+  className="c0"
+  defaultValue="Disabled"
+  disabled={true}
+/>
+`;
+
+exports[`Atoms DOM storyshots Atoms/TextArea Error 1`] = `
+.c0 {
+  display: inline-block;
+  padding: .5rem;
+  margin: 0;
+  min-width: 180px;
+  background-color: rgb(255,255,255);
+  border: 2px solid rgb(255,0,0);
+  border-radius: 4px;
+  -webkit-flex: 1 1 auto;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  cursor: initial;
+  box-sizing: border-box;
+  height: 100px;
+  min-height: 50px;
+  vertical-align: top;
+}
+
+.c0.c0:focus {
+  border-color: rgb(255,0,0);
+  outline: none;
+}
+
+.c0.c0[disabled] {
+  background-color: #f6f6f6;
+}
+
+<textarea
+  className="c0"
+  defaultValue="Error"
+/>
+`;

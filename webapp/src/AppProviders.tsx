@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 
 import { Logger, LoggerProvider, HTTPLogger } from 'lessons/m9/logger';
 import { ErrorScreenProvider } from 'lessons/m9/error-ui';
+import { AuthProvider } from 'lessons/m10/auth/AuthProvider';
 
 interface AppProvidersProps {
   logger?: Logger
@@ -17,7 +18,9 @@ export const AppProviders: React.FC<AppProvidersProps> = (props) => {
   return (
     <LoggerProvider logger={logger}>
       <ErrorScreenProvider>
-        { children }
+        <AuthProvider>
+          { children }
+        </AuthProvider>
       </ErrorScreenProvider>
     </LoggerProvider>
   )

@@ -30,6 +30,7 @@
     "node_modules",
     "src/lessons/m1",
     "src/lessons/m2",
-    "src/lessons/m3/typescript/compile-fail"
+    "src/lessons/m3/typescript/compile-fail",
+    "src/lessons/m10/cypress"
   ]
 }
