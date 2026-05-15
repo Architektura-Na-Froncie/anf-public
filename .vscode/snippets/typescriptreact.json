@@ -1,0 +1,90 @@
+{
+	"Import": {
+		"prefix": "im",
+		"description": "🙈 dawaj import!",
+		"body": [
+			"import { ${2} } from './${1}';",
+			"$0"
+		]
+	},
+	"Reducer-Arrow": {
+		"prefix": "red",
+		"description": "🙈 dawaj array.reduce/arrow!",
+		"body": [
+			"${1:collection}.reduce((${3:aggr}, ${2:item}) => ${5:newAggr}, ${4:initial})",
+			"$0"
+		]
+	},
+	"Reducer-Return": {
+		"prefix": "red-fn",
+		"description": "🙈 dawaj array.reduce/return!",
+		"body": [
+			"${1:collection}.reduce((${3:aggr}, ${2:item}) => {",
+			"  return ${5:newAggr}",
+			"}, ${4:initial})",
+			"$0"
+		]
+	},
+	"StyledComponent": {
+		"prefix": "styl-comp",
+		"description": "💅 styled-components",
+		"body": [
+			"import styled from 'styled-components';",
+			"",
+			"export const ${1:Component} = styled.${2:tag}`",
+			"  $0color: green;",
+			"`;",
+			""
+		]
+	},
+	"StyledComponentWithProps": {
+		"prefix": "styl-comp-props",
+		"description": "💅 styled-components with props",
+		"body": [
+			"import styled from 'styled-components';",
+			"",
+			"interface ${TM_FILENAME_BASE}Props {",
+			"  ${3:color: string}",
+			"}",
+			"",
+			"export const ${TM_FILENAME_BASE} = styled.${2:tag}<${TM_FILENAME_BASE}Props>`",
+			"  $0color: ${props => props.color};",
+			"`;",
+			""
+		]
+	},
+	"FunctionComponent": {
+		"prefix": "func-comp-name",
+		"description": "📦 function component (custom name)",
+		"body": [
+			"import React from 'react';",
+			"",
+			"  ${2:...}",
+			"interface ${1:Component}Props {",
+			"}",
+			"",
+			"export const ${1:Component}: React.FC<${1:Component}Props> = (${3:props}) => {",
+			"  const ${4:{}} = props",
+			"  return <>${5}</>",
+			"}",
+			"$0"
+		]
+	},
+	"FunctionComponentFileName": {
+		"prefix": "func-comp-by-file",
+		"description": "📦 function component (name from file)",
+		"body": [
+			"import React from 'react';",
+			"",
+			"interface ${TM_FILENAME_BASE}Props {",
+			"  ${2:...}",
+			"}",
+			"",
+			"export const ${TM_FILENAME_BASE}: React.FC<${TM_FILENAME_BASE}Props> = (${3:props}) => {",
+			"  const ${4:{}} = props",
+			"  return <>${5}</>",
+			"}",
+			"$0"
+		]
+	}
+}

@@ -1,0 +1,11 @@
+{
+  "NAME": "ItCorpo",
+  "OPEN_RESOURCES": [
+    "/db",
+    "/log",
+    "/auth",
+    "/license",
+    "/images/error"
+  ],
+  "TENANT_ID_HEADER": "TenantIDHeader"
+}

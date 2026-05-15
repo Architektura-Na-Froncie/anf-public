@@ -1,0 +1,8 @@
+{
+  "name": "architektura-na-froncie",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install": "cd api && npm install && cd ../webapp && npm install"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "departments": [
+    {
+      "id": 1,
+      "name": "Management",
+      "operatingCosts": 8436
+    },
+    {
+      "id": 2,
+      "name": "Sales",
+      "operatingCosts": 5836
+    },
+    {
+      "id": 3,
+      "name": "Accounting",
+      "operatingCosts": 4465
+    },
+    {
+      "id": 4,
+      "name": "Human Resources",
+      "operatingCosts": 3764
+    },
+    {
+      "id": 5,
+      "name": "Marketing",
+      "operatingCosts": 7368
+    },
+    {
+      "id": 6,
+      "name": "Development",
+      "operatingCosts": 9209
+    },
+    {
+      "id": 7,
+      "name": "Support",
+      "operatingCosts": 2901
+    }
+  ]
+}
