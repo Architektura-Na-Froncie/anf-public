@@ -2,12 +2,6 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background: #000;
+  background: #f3f5f8;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  margin-top: 15vmin;
-  pointer-events: none;
 }

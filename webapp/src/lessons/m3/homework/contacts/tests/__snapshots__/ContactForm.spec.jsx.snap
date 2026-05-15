@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContactForm Component should match snapshot 1`] = `
+<form
+  onSubmit={[Function]}
+>
+  <div
+    className="form-group"
+  >
+    <label
+      className="d-block w-100"
+    >
+      Name:
+      <input
+        className="form-control"
+        name="name"
+        onChange={[Function]}
+      />
+    </label>
+  </div>
+  <div
+    className="form-group"
+  >
+    <label
+      className="d-block w-100"
+    >
+      Contact details:
+      <textarea
+        className="form-control"
+        name="details"
+        onChange={[Function]}
+      />
+    </label>
+  </div>
+  <div
+    className="form-group"
+  >
+    <input
+      className="btn btn-default"
+      id="cancel-contact"
+      type="button"
+      value="Cancel"
+    />
+    <input
+      className="btn btn-primary ml-2"
+      id="save-contact"
+      type="submit"
+      value="Save"
+    />
+  </div>
+</form>
+`;

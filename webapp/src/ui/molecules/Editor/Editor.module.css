@@ -1,0 +1,4 @@
+.editor :global .CodeMirror,
+.editor :global .CodeMirror-scroll {
+  min-height: 150px;
+}

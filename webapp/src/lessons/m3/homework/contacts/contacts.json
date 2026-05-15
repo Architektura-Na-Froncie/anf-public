@@ -1,0 +1,27 @@
+[
+	{
+		"id": "ad324356-384a-4fa4-a1d9-e373b0f760d0",
+		"name": "Allison Clayton",
+		"details": "383-897-142"
+	},
+	{
+		"id": "cbe348af-a5ae-47c2-8d2b-07441a773fb7",
+		"name": "David Jacobs",
+		"details": "david.jacobs@erntogra.com"
+	},
+	{
+		"id": "4822e046-eee3-4d3a-b9be-f860f48ea5df",
+		"name": "Dominic Ramsey",
+		"details": "117 Aster Court APT 187\nMiami 78499"
+	},
+	{
+		"id": "3d3a4d97-0bad-4ea7-93e0-e936dcc02928",
+		"name": "Victoria Clarke",
+		"details": "victoria.clarke@buapel.com"
+	},
+	{
+		"id": "4bd7bd06-c5c5-428f-bde9-de07e59628e7",
+		"name": "Zoe M. Russell",
+		"details": "zoe.russell@furba.biz\n014-203-3635"
+	}
+]

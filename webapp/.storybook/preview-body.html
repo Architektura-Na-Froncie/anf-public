@@ -1,0 +1,9 @@
+<!-- Stop nagging about new Storybook version available -->
+<script>
+  (function () {
+    const a = window.parent.document.body.querySelector('#root a[href="/?path=/settings/about"]');
+    if (a) {
+      a.parentNode.style.display = 'none';
+    }
+  })();
+</script>

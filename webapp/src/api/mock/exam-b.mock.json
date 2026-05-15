@@ -1,0 +1,74 @@
+{
+  "id": "b",
+  "userId": "084d0951-313f-41f5-bf4a-426e2629dd2f",
+  "tasks": [
+    {
+      "type": "CHOICE",
+      "id": "20c51819-7bbe-4937-9082-131cf6201e31",
+      "question": "Is it better to buy than to rent?",
+      "choices": [
+        {
+          "id": "1",
+          "label": "Yes"
+        },
+        {
+          "id": "2",
+          "label": "No"
+        },
+        {
+          "id": "3",
+          "label": "Maybe"
+        },
+        {
+          "id": "4",
+          "label": "Perhaps"
+        },
+        {
+          "id": "5",
+          "label": "And you?"
+        }
+      ]
+    },
+    {
+      "type": "CHOICE",
+      "id": "e6e737c3-8424-494b-802f-eb988ec4b624",
+      "question": "Why Should We Hire You?",
+      "choices": [
+        {
+          "id": "1",
+          "label": "Yes"
+        },
+        {
+          "id": "2",
+          "label": "Also yes"
+        }
+      ]
+    },
+    {
+      "type": "CHOICE",
+      "id": "e2cf97cc-1465-4495-aa78-d4003de2dc02",
+      "question": "Why Were You Fired?",
+      "choices": [
+        {
+          "id": "2",
+          "label": "No"
+        },
+        {
+          "id": "5",
+          "label": "And you?"
+        }
+      ]
+    },
+    {
+      "type": "CHOICE",
+      "id": "84f1e385-0fdb-47c4-b849-7a23538304d0",
+      "question": "What’s Your Current Salary?",
+      "choices": [
+        {
+          "id": "2",
+          "label": "No"
+        }
+      ]
+    }
+  ]
+}

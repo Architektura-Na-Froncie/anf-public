@@ -1,0 +1,6 @@
+{
+  "hooks": {
+    "pre-commit": "npm run check:circular-deps",
+    "pre-push": "npm run test:unit"
+  }
+}

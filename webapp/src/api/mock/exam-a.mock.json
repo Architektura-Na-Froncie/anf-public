@@ -1,0 +1,43 @@
+{
+  "id": "a",
+  "userId": "6ca8b2e6-67e3-464b-b688-6878ffc34c0e",
+  "tasks": [
+    {
+      "type": "TEXT",
+      "id": "e853ac10-4a6a-4b29-8767-caa0462b64ef",
+      "question": "Are you living the life of your dreams?"
+    },
+    {
+      "type": "CHOICE",
+      "id": "41fe3dc3-c2da-4d5c-995d-0ab51f5148cc",
+      "question": "Is it better to buy than to rent?",
+      "choices": [
+        {
+          "id": "1",
+          "label": "Yes"
+        },
+        {
+          "id": "2",
+          "label": "No"
+        },
+        {
+          "id": "3",
+          "label": "Maybe"
+        },
+        {
+          "id": "4",
+          "label": "Perhaps"
+        },
+        {
+          "id": "5",
+          "label": "And you?"
+        }
+      ]
+    },
+    {
+      "type": "RICHTEXT",
+      "id": "317b9c4e-77d0-4c6c-9fa5-31e1df7ea1f4",
+      "question": "How worried are you about global warming?"
+    }
+  ]
+}

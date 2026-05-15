@@ -1,15 +1,17 @@
 import React from 'react';
-import logo from './assets/logo.svg';
+import { BrowserRouter } from 'react-router-dom';
+
 import './App.css';
+import './styles/fonts.css';
+
+import { Main } from 'Main';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-      </header>
-    </div>
-  );
+    <BrowserRouter>
+      <Main />
+    </BrowserRouter>
+  )
 }
 
 export default App;
