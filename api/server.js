@@ -53,4 +53,6 @@ app.listen(argv.port, () => {
 })
 
 require('./collaborative/register-collaborative-service')(argv.collaborativeService)
-require('./currency/register-currency-service')(argv.currencyService)
+
+require('./currency/register-currency-service')(argv.currencyService) // Socket.IO
+// require('./currency/register-currency-service-ws')(argv.currencyService) // "czyste" websockety

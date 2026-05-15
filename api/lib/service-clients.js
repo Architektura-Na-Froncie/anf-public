@@ -23,7 +23,7 @@ class ServiceClients {
     this.logClients()
     return id
   }
-  
+
   update = (id, dataPatch) => {
     const client = this.clients.find(c => c.id === id)
     if (!client) {
@@ -40,7 +40,7 @@ class ServiceClients {
       }
     })
   }
-  
+
   unsubscribe = (id) => {
     let idx = this.clients.findIndex(c => c.id === id)
     this.clients.splice(idx, 1)

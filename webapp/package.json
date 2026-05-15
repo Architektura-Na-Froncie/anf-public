@@ -9,7 +9,8 @@
     "check:circular-deps": "madge --warning --circular --extensions ts,tsx src",
     "dump:deps": "madge --json --include-npm src/index.tsx > deps.json",
     "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "build-storybook": "build-storybook",
+    "mobx-devtools": "mobx-devtools"
   },
   "dependencies": {
     "@axe-core/react": "^4.4.3",
@@ -59,6 +60,9 @@
     "jest-axe": "^6.0.0",
     "jest-styled-components": "^7.0.8",
     "madge": "^5.0.1",
+    "mobx": "~6.6.0",
+    "mobx-devtools": "^0.9.27",
+    "mobx-react-lite": "^3.4.0",
     "msw": "~0.39.2",
     "msw-storybook-addon": "^1.6.3",
     "node-polyfill-webpack-plugin": "^1.1.4",
@@ -78,6 +82,8 @@
     "redux-devtools-extension": "^2.13.9",
     "redux-mock-store": "^1.5.4",
     "redux-thunk": "^2.4.1",
+    "rxjs": "^7.5.5",
+    "rxjs-spy": "^8.0.2",
     "simplemde": "^1.11.2",
     "socket.io-client": "^4.4.1",
     "styled-components": "^5.3.5",

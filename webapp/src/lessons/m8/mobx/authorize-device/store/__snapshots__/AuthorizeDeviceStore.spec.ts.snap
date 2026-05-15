@@ -1,0 +1,172 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AuthorizeDeviceStore add device should notify state changes when failing to add device 1`] = `
+Array [
+  Array [
+    Object {
+      "type": "CHOOSE_METHOD",
+    },
+  ],
+  Array [
+    Object {
+      "type": "ADD_DEVICE_FORM",
+    },
+  ],
+  Array [
+    Object {
+      "type": "LOADING",
+    },
+  ],
+  Array [
+    Object {
+      "deviceName": "my computer",
+      "error": false,
+      "instruction": "Wpisz hasło SMS",
+      "tokenId": "1111-2222-3333-4444",
+      "type": "ADD_DEVICE_TOKEN",
+    },
+  ],
+  Array [
+    Object {
+      "type": "LOADING",
+    },
+  ],
+  Array [
+    Object {
+      "deviceName": "my computer",
+      "error": true,
+      "instruction": "Wpisz hasło SMS",
+      "tokenId": "1111-2222-3333-4444",
+      "type": "ADD_DEVICE_TOKEN",
+    },
+  ],
+]
+`;
+
+exports[`AuthorizeDeviceStore add device should notify state changes when successfully adding device 1`] = `
+Array [
+  Array [
+    Object {
+      "type": "CHOOSE_METHOD",
+    },
+  ],
+  Array [
+    Object {
+      "type": "ADD_DEVICE_FORM",
+    },
+  ],
+  Array [
+    Object {
+      "type": "LOADING",
+    },
+  ],
+  Array [
+    Object {
+      "deviceName": "my computer",
+      "error": false,
+      "instruction": "Wpisz hasło SMS",
+      "tokenId": "1111-2222-3333-4444",
+      "type": "ADD_DEVICE_TOKEN",
+    },
+  ],
+  Array [
+    Object {
+      "type": "LOADING",
+    },
+  ],
+  Array [
+    Object {
+      "deviceName": "my computer",
+      "error": false,
+      "instruction": "Wpisz hasło SMS",
+      "tokenId": "1111-2222-3333-4444",
+      "type": "ADD_DEVICE_TOKEN",
+    },
+  ],
+  Array [
+    Object {
+      "type": "LOADING",
+    },
+  ],
+  Array [
+    Object {
+      "deviceName": "my computer",
+      "type": "ADD_DEVICE_CONFIRMATION",
+    },
+  ],
+  Array [
+    Object {
+      "type": "ADD_DEVICE_SUCCESS",
+    },
+  ],
+]
+`;
+
+exports[`AuthorizeDeviceStore allow device once should notify state changes when failing to allow device once 1`] = `
+Array [
+  Array [
+    Object {
+      "type": "CHOOSE_METHOD",
+    },
+  ],
+  Array [
+    Object {
+      "type": "LOADING",
+    },
+  ],
+  Array [
+    Object {
+      "error": false,
+      "instruction": "Wpisz hasło SMS",
+      "tokenId": "1111-2222-3333-4444",
+      "type": "ALLOW_ONCE_TOKEN",
+    },
+  ],
+  Array [
+    Object {
+      "type": "LOADING",
+    },
+  ],
+  Array [
+    Object {
+      "error": true,
+      "instruction": "Wpisz hasło SMS",
+      "tokenId": "1111-2222-3333-4444",
+      "type": "ALLOW_ONCE_TOKEN",
+    },
+  ],
+]
+`;
+
+exports[`AuthorizeDeviceStore allow device once should notify state changes when successfully allowing device once 1`] = `
+Array [
+  Array [
+    Object {
+      "type": "CHOOSE_METHOD",
+    },
+  ],
+  Array [
+    Object {
+      "type": "LOADING",
+    },
+  ],
+  Array [
+    Object {
+      "error": false,
+      "instruction": "Wpisz hasło SMS",
+      "tokenId": "1111-2222-3333-4444",
+      "type": "ALLOW_ONCE_TOKEN",
+    },
+  ],
+  Array [
+    Object {
+      "type": "LOADING",
+    },
+  ],
+  Array [
+    Object {
+      "type": "ALLOW_ONCE_SUCCESS",
+    },
+  ],
+]
+`;
