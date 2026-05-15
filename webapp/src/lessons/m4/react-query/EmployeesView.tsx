@@ -109,12 +109,12 @@ export const EmployeesView: React.FC<EmployeesViewProps> = () => {
             </div>
             {isSuccess && (<SalarySummariesGrid>
               <SalarySummariesCell>Miesięczny koszt pensji:</SalarySummariesCell>
-              <SalarySummariesCell align="right"><FormatMoney amount={calculateTotalSalary(data!)} /></SalarySummariesCell>
+              <SalarySummariesCell align="right"><FormatMoney amount={calculateTotalSalary(data)} /></SalarySummariesCell>
               {displaySalarySummaries && <>
               <SalarySummariesCell>Kwartalny koszt pensji:</SalarySummariesCell>
-              <SalarySummariesCell align="right"><FormatMoney amount={calculateTotalSalary(data!) * 3} /></SalarySummariesCell>
+              <SalarySummariesCell align="right"><FormatMoney amount={calculateTotalSalary(data) * 3} /></SalarySummariesCell>
               <SalarySummariesCell>Roczny koszt pensji:</SalarySummariesCell>
-              <SalarySummariesCell align="right"><FormatMoney amount={calculateTotalSalary(data!) * 12} /></SalarySummariesCell>
+              <SalarySummariesCell align="right"><FormatMoney amount={calculateTotalSalary(data) * 12} /></SalarySummariesCell>
               </>}
             </SalarySummariesGrid>)}
           </BorderedPanel>
