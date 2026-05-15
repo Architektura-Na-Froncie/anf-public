@@ -1,0 +1,9 @@
+<div class="panelHeader">
+  <h1 class="panelTitle">{{ panelTitle }}</h1>
+  <span class="panelIcon" [ngClass]="'panelIcon' + icon" [title]="iconHelp || icon"></span>
+  <span class="panelIconBadge" *ngIf="iconBadge">{{ iconBadge }}</span>
+
+</div>
+<div class="panelBody">
+  <ng-content></ng-content>
+</div>

@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "concurrently --names \"SHELL,EMPLOYEES,DEPARTMENTS\" -c \"bgYellow.black.bold,blue.bold,magenta.bold\" \"cd shell && npm start\" \"cd employees && npm start\" \"cd departments && npm start\"",
+    "install": "cd shell && npm i && cd ../employees && npm i && cd ../departments && npm i"
+  },
+  "dependencies": {
+    "concurrently": "^7.3.0"
+  }
+}

@@ -1,0 +1,47 @@
+<app-panel panelTitle="Ustawienia" icon="Angular" iconHelp="Angular + WebComponent" iconBadge="WC">
+  <dl class="settingsForm">
+    <div class="settingsFormRow">
+      <dt>Wyświetlaj koszty</dt>
+      <dd>
+        <button
+          class="settingsFormToggle"
+          [ngClass]="{ 'settingsFormToggleActive': displayCosts }"
+          (click)="onChangeSettings({ displayCosts: !displayCosts })"
+          aria-label="Zmień"
+        ></button>
+      </dd>
+    </div>
+    <div class="settingsFormRow">
+      <dt>
+        Próg kosztów
+        <small>Pokazuj tylko wyniki z kosztami równymi lub większymi</small>
+      </dt>
+      <dd>
+        <input
+          class="settingsFormInput"
+          type="number"
+          min="0"
+          [ngModel]="minCostValue"
+          (ngModelChange)="onChangeSettings({ minCostValue: $event })"
+        /> $
+      </dd>
+    </div>
+    <div class="settingsFormRow">
+      <dt>Sortuj wyniki wg. kosztów</dt>
+      <dd>
+        <select
+          class="settingsFormInput"
+          [ngModel]="costSortOrder"
+          (ngModelChange)="onChangeSettings({ costSortOrder: $event })"
+        >
+          <option value="">Brak</option>
+          <option value="asc">Rosnąco</option>
+          <option value="desc">Malejąco</option>
+        </select>
+      </dd>
+    </div>
+  </dl>
+
+  <ng-content></ng-content>
+</app-panel>
+

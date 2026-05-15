@@ -1,0 +1,14 @@
+<h1 class="layoutTitle">Angular Elements</h1>
+<div class="layoutColumns">
+  <div class="layoutColumn">
+    <app-employees [settings]="settings"></app-employees>
+  </div>
+  <div class="layoutColumn">
+    <app-settings
+      [displayCosts]="settings.displayCosts"
+      [minCostValue]="settings.minCostValue"
+      [costSortOrder]="settings.costSortOrder"
+      (settingsChange)="onSettingsChange($event)"
+    ></app-settings>
+  </div>
+</div>

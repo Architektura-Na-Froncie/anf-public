@@ -1,0 +1,96 @@
+:host {
+  display: block;
+}
+
+.settingsForm {
+  display: block;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.settingsFormRow {
+  padding: 16px 0;
+  border-top: 1px solid rgba(0, 0, 0, .15);
+}
+
+.settingsFormRow:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.settingsFormRow dt {
+  margin: 0 0 6px;
+  font-size: 16px;
+}
+
+.settingsFormRow dd {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+
+.settingsFormRow dt small {
+  display: block;
+  margin-top: 4px;
+  color: #555;
+}
+
+.settingsFormInput {
+  width: 200px;
+  max-width: 100%;
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, .25);
+  box-sizing: border-box;
+  background: #fff;
+  appearance: none;
+  -webkit-appearance: none;
+  font-size: 16px;
+}
+
+select.settingsFormInput {
+  background-image: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 1792 1792' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='%23555' d='M1408 1088q0 26-19 45l-448 448q-19 19-45 19t-45-19l-448-448q-19-19-19-45t19-45 45-19h896q26 0 45 19t19 45zm0-384q0 26-19 45t-45 19h-896q-26 0-45-19t-19-45 19-45l448-448q19-19 45-19t45 19l448 448q19 19 19 45z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 8px top 50%;
+}
+
+.settingsFormCheckbox {
+  position: relative;
+}
+
+.settingsFormToggle {
+  position: relative;
+  display: block;
+  height: 24px;
+  width: 46px;
+  border: 1px solid rgba(0, 0, 0, .25);
+  border-radius: 5px;
+  background: #ddd;
+  appearance: none;
+  color: transparent;
+  cursor: pointer;
+  transition: background-color 250ms 150ms;
+}
+
+.settingsFormToggle::before {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  background: #fff;
+  content: '';
+  left: 0;
+  top: 0;
+  transition: left 250ms;
+  will-change: left;
+  box-shadow: 0 0 2px rgba(0, 0, 0, .15);
+}
+
+.settingsFormToggleActive {
+  background: #080;
+}
+
+.settingsFormToggleActive::before {
+  left: 22px;
+}

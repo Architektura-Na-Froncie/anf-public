@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "scripts": {
+    "start": "concurrently --names \"SHELL,EMPLOYEES,SETTINGS,PUBSUB\" -c \"bgYellow.black.bold,blue.bold,magenta.bold,green.bold\" \"cd shell && npm start\" \"cd employees && npm start\" \"cd settings && npm start\" \"cd pubsub && npm start\"",
+    "install": "cd shell && npm i && cd ../employees && npm i && cd ../settings && npm i && cd ../pubsub && npm i"
+  },
+  "dependencies": {
+    "concurrently": "^7.3.0"
+  }
+}

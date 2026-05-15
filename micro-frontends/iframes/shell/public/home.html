@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Home</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+  </style>
+  <link rel="stylesheet" href="/home.css" />
+</head>
+<body>
+  <div class="panel">
+    <div class="panelHeader">
+      <h1 class="panelTitle">Home</h1>
+      <span class="panelIcon panelIconHTML" title="HTML"></span>
+    </div>
+    <div class="panelBody">
+      <p>Ten panel jest niezależną aplikacją osadzoną w iframe.</p>
+    </div>
+  </div>
+  <script>
+    window.addEventListener('load', () => {
+      window.parent?.postMessage({ type: 'updateIframeHeight', height: document.body.offsetHeight }, '*');
+    });
+  </script>
+</body>
+</html>

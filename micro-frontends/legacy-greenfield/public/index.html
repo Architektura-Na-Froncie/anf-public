@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Embedded legacy</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.min.js"></script>
+    <link rel="stylesheet" href="%PUBLIC_URL%/angularjs-app.css" />
+    <style>
+      [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+        display: none !important;
+      }
+
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background: rgb(230, 230, 235);
+        font-family: sans-serif;
+      }
+
+      .page-title {
+        margin: 20px 0;
+        padding: 0 20px;
+        text-align: center;
+        font-size: 22px;
+      }
+
+      .layout {
+        display: flex;
+        flex-flow: row wrap;
+        margin: 0 10px 60px;
+      }
+      .layout-pane {
+        flex: 1 1 35%;
+        min-width: 0;
+        padding: 10px;
+        box-sizing: border-box;
+      }
+      .layout-pane--angularjs {
+        flex-basis: 30%;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+
+    <h1 class="page-title">Embedded legacy (AngularJS w React)</h1>
+    <div class="layout">
+      <div class="layout-pane layout-pane--react">
+        <!-- placeholder for react/react-dom-render -->
+        <div id="root"></div>
+      </div>
+      <div class="layout-pane layout-pane--react-wc">
+        <!-- placeholder for react/web-component -->
+        <employees-list></employees-list>
+      </div>
+      <div class="layout-pane layout-pane--angularjs" ng-app="angularApp">
+        <!-- some angularJS code: START 😄 -->
+        <div class="panel" ng-controller="SettingsController as vm" ng-cloak>
+          <div class="panelHeader">
+            <h1 class="panelTitle">Ustawienia</h1>
+            <span class="panelIcon panelIconAngularJS" title="AngularJS"></span>
+          </div>
+          <div class="panelBody">
+            <dl class="settingsForm">
+              <div class="settingsFormRow">
+                <dt>Wyświetlaj koszty</dt>
+                <dd>
+                  <button
+                    class="settingsFormToggle"
+                    ng-class="{ 'settingsFormToggleActive': vm.settings.displayCosts }"
+                    ng-click="vm.settings.displayCosts = !vm.settings.displayCosts; vm.notifyChange()"
+                    aria-label="Zmień"
+                  ></button>
+                </dd>
+              </div>
+              <div class="settingsFormRow">
+                <dt>
+                  Próg kosztów
+                  <small>Pokazuj tylko wyniki z kosztami równymi lub większymi</small>
+                </dt>
+                <dd>
+                  <input
+                    class="settingsFormInput"
+                    type="number" min="0"
+                    ng-model="vm.settings.minCostValue"
+                    ng-change="vm.notifyChange()"
+                  /> $
+                </dd>
+              </div>
+              <div class="settingsFormRow">
+                <dt>Sortuj wyniki wg. kosztów</dt>
+                <dd>
+                  <select class="settingsFormInput" ng-model="vm.settings.costSortOrder" ng-change="vm.notifyChange()">
+                    <option value="">Brak</option>
+                    <option value="asc">Rosnąco</option>
+                    <option value="desc">Malejąco</option>
+                  </select>
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+        <!-- some angularJS code: END 😄 -->
+      </div>
+    </div>
+
+    <script type="text/javascript" src="angularjs-app.js"></script>
+  </body>
+</html>

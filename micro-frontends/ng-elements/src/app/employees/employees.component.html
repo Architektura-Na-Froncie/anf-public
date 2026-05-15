@@ -1,0 +1,23 @@
+<app-panel panelTitle="Pracownicy" icon="Angular" iconHelp="Angular + WebComponent" iconBadge="WC">
+  <div class="tableWrapper" *ngIf="canDisplayData; else loading">
+    <table class="table">
+      <thead class="tableHeader">
+        <tr>
+          <th>Imię i nazwisko</th>
+          <th>Stanowisko</th>
+          <th *ngIf="settings?.displayCosts">Koszty</th>
+        </tr>
+      </thead>
+      <tbody class="tableContent">
+        <tr *ngFor="let e of dataToDisplay">
+          <td>{{ e.firstName }} {{ e.lastName }}</td>
+          <td>{{ e.title }}</td>
+          <td *ngIf="settings?.displayCosts">{{ e.salary }}$</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <ng-template #loading>
+    Loading...
+  </ng-template>
+</app-panel>

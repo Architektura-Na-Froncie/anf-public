@@ -1,0 +1,27 @@
+:host {
+  display: block;
+}
+
+.layoutTitle {
+  margin: 20px 0 10px;
+  padding: 0 20px;
+  text-align: center;
+  font: 22px/1.33 sans-serif;
+  font-weight: bold;
+}
+
+.layoutColumns {
+  display: flex;
+  flex-flow: row;
+  margin: 0 10px 60px;
+}
+
+.layoutColumn {
+  flex: 1 1 65%;
+  min-width: 0;
+  padding: 10px;
+}
+
+.layoutColumn:last-child {
+  flex-basis: 35%;
+}

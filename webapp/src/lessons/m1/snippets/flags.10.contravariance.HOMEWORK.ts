@@ -13,5 +13,5 @@ parametrizedFn = genericFn
   // a że genericFn obsłuży COKOLWIEK - to da radę
 genericFn = parametrizedFn // ❌
   // genericFn musi obsłużyć cokolwiek
-  // ale genericFn potrafi obsługiwać tylko stringi
+  // ale parametrizedFn potrafi obsługiwać tylko stringi
     // Type 'T' is not assignable to type 'string'

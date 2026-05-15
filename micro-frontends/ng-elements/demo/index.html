@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="layout">
+    <h1 class="layoutTitle">Angular elements demo</h1>
+    <div class="layoutColumns">
+      <div class="layoutColumn">
+        <app-employees></app-employees>
+      </div>
+      <div class="layoutColumn">
+        <app-settings min-cost-value="1000">
+          <!-- projected content -->
+          <button onclick="randomize()" style="margin-top: 20px; font-size: 16px;">Losuj ustawienia</button>
+        </app-settings>
+      </div>
+    </div>
+  </div>
+
+  <script src="./ng-elements.js"></script>
+  <script>
+    let settingsState = {};
+    const settings = document.querySelector('app-settings');
+    const employees = document.querySelector('app-employees');
+
+    // 🔥 Nasłuchiwanie eventów z webcomponentu
+    settings.addEventListener('settingsChange', (event) => {
+      console.log('settingsChange', event);
+
+      settingsState = { ...settingsState, ...event.detail };
+
+      // Przekazujemy zaktualizowany stan do webcomponentu po zaktualizowaniu
+      // stanu na podstawie eventu
+      Object.assign(settings, settingsState);
+
+      employees.settings = settingsState;
+    });
+
+    function randomize() {
+      const displayCosts = Math.floor(Math.random() * 1000) % 2 === 0;
+      const minCostValue = Math.floor(Math.random() * 1000);
+      const costSortOrder = ['asc', 'desc', undefined][Math.floor(Math.random() * 10) % 3];
+
+      // Przesyłanie danych do webcomponentu przez atrybuty - typy proste (primitive)
+      settings.setAttribute('min-cost-value', minCostValue);
+
+      // oraz przez propertiesy - w ten sposób można przekazywać typy złożone (tablice, obiekty)
+      // bez konieczności ich serializacji/deserializacji
+      settings.displayCosts = displayCosts;
+      Object.assign(settings, { costSortOrder });
+
+      employees.settings = { minCostValue, displayCosts, costSortOrder };
+    }
+  </script>
+</body>
+</html>

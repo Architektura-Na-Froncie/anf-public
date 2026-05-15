@@ -1,0 +1,5 @@
+{
+  "scripts": {
+    "install": "cd iframes && npm install && cd ../embedded && npm install"
+  }
+}
