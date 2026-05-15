@@ -1,0 +1,13 @@
+{
+  "delaying": {
+    "active": false,
+    "URLIncludes": ["token"],
+    "delay": [500, 2000]
+  },
+  "failing": {
+    "active": false,
+    "URLIncludes": ["token"],
+    "probability": 1,
+    "status": 403
+  }
+}

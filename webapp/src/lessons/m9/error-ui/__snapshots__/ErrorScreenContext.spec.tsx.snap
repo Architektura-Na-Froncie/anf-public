@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ErrorScreen should send ERROR log (Internet connection error. Check your wires!) if ErrorPage was displayed 1`] = `
+Array [
+  Array [
+    "ERROR",
+    "Error Page displayed",
+    Object {
+      "type": "CONNECTION_FAILURE",
+    },
+  ],
+]
+`;
+
+exports[`ErrorScreen should send ERROR log (This resource is no longer available.) if ErrorPage was displayed 1`] = `
+Array [
+  Array [
+    "ERROR",
+    "Error Page displayed",
+    Object {
+      "type": "TIMEOUT",
+    },
+  ],
+]
+`;
+
+exports[`ErrorScreen should send ERROR log (Unexpected error occurred. Please contact Support.) if ErrorPage was displayed 1`] = `
+Array [
+  Array [
+    "ERROR",
+    "Error Page displayed",
+    Object {
+      "type": "UNEXPECTED_ERROR",
+    },
+  ],
+]
+`;

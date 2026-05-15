@@ -25,3 +25,17 @@ import { initialize, mswDecorator } from 'msw-storybook-addon';
 
 initialize({ onUnhandledRequest: 'bypass' });
 addDecorator(mswDecorator);
+
+// M9 ERROR HANDLING
+// decorators
+
+import React from 'react';
+import { ErrorScreenProvider } from '../src/lessons/m9/error-ui'
+import { LoggerProvider } from '../src/lessons/m9/logger';
+import { StorybookLogger } from '../src/lessons/m9/logger/Logger.storybook';
+
+export const decorators = [
+  mswDecorator,
+  (Story) => <ErrorScreenProvider><Story/></ErrorScreenProvider>,
+  (Story) => <LoggerProvider logger={StorybookLogger} ><Story/></LoggerProvider>,
+];

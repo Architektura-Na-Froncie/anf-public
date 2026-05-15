@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getUserErrorMessage should produce FORBIDDEN if a HTTP 403 was thrown 1`] = `
+Object {
+  "type": "FORBIDDEN",
+}
+`;
+
+exports[`getUserErrorMessage should produce NOT_FOUND if a HTTP 404 was thrown 1`] = `
+Object {
+  "type": "NOT_FOUND",
+}
+`;
+
+exports[`getUserErrorMessage should produce TIMEOUT if a HTTP 410 was thrown 1`] = `
+Object {
+  "type": "TIMEOUT",
+}
+`;

@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ErrorBoundary should send ERROR log if ErrorBoundary caught an exception 1`] = `
+Array [
+  Array [
+    "ERROR",
+    "UI Error Boundary reached: UNEXPECTED_ERROR",
+    Object {
+      "componentStack": "
+      this is a mock component stack
+      for snapshot purposes
+      don't worry",
+      "message": "Kaboom!",
+    },
+  ],
+]
+`;

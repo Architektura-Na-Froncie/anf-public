@@ -1,13 +1,24 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+
+import { Logger, LoggerProvider, HTTPLogger } from 'lessons/m9/logger';
+import { ErrorScreenProvider } from 'lessons/m9/error-ui';
 
 interface AppProvidersProps {
+  logger?: Logger
 }
 
 export const AppProviders: React.FC<AppProvidersProps> = (props) => {
-  const { children } = props
+  const { children, logger = new HTTPLogger() } = props
 
-  // 🔥 w następnych modułach dojdą providery
-  return <>
-    {children}
-  </>
+  useEffect(() => {
+    logger.debug('initialized app')
+  }, [logger])
+
+  return (
+    <LoggerProvider logger={logger}>
+      <ErrorScreenProvider>
+        { children }
+      </ErrorScreenProvider>
+    </LoggerProvider>
+  )
 }

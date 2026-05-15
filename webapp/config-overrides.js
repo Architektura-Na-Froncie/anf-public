@@ -1,4 +1,5 @@
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
+const { devServer } = require('./webpack-proxy/dev-server');
 const { VERSION } = require('./src/env');
 
 module.exports = {
@@ -24,7 +25,7 @@ module.exports = {
       }
     }
 
-    // non-prod
+    // non-prod, dev-server
     return {
       ...config,
       plugins: [
@@ -36,4 +37,5 @@ module.exports = {
       ],
     };
   },
+  devServer,
 }

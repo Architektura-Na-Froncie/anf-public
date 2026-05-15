@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AuthorizeDevice (Logging) should allow once after the user passes the correct password 1`] = `
+Array [
+  Array [
+    "DEBUG",
+    "User has started process: authorize device",
+  ],
+  Array [
+    "INFO",
+    "User has clicked to allow once",
+    undefined,
+  ],
+  Array [
+    "INFO",
+    "The device has been successfully authorized once",
+    undefined,
+  ],
+]
+`;
+
+exports[`AuthorizeDevice (Logging) should authorize a device successfully after the user passes the correct password 1`] = `
+Array [
+  Array [
+    "DEBUG",
+    "User has started process: authorize device",
+  ],
+  Array [
+    "INFO",
+    "User has clicked to add a trusted device",
+    undefined,
+  ],
+  Array [
+    "INFO",
+    "User has chosen the device name: mój komputerek",
+    undefined,
+  ],
+  Array [
+    "INFO",
+    "The device has been successfully added to trusted devices",
+    undefined,
+  ],
+  Array [
+    "INFO",
+    "User has successfully finished the process",
+    undefined,
+  ],
+]
+`;
+
+exports[`AuthorizeDevice (Logging) should block the process if the user passes an invalid password 1`] = `
+Array [
+  Array [
+    "DEBUG",
+    "User has started process: authorize device",
+  ],
+  Array [
+    "INFO",
+    "User has clicked to add a trusted device",
+    undefined,
+  ],
+  Array [
+    "INFO",
+    "User has chosen the device name: Mój komputer",
+    undefined,
+  ],
+  Array [
+    "INFO",
+    "User has sent an invalid confirmation token",
+    undefined,
+  ],
+]
+`;
+
+exports[`AuthorizeDevice (Logging) should cancel the authorization choice if the user clicks cancel on "add device" 1`] = `
+Array [
+  Array [
+    "DEBUG",
+    "User has started process: authorize device",
+  ],
+  Array [
+    "INFO",
+    "User has clicked to add a trusted device",
+    undefined,
+  ],
+  Array [
+    "INFO",
+    "User has chosen the device name: Mój komputer",
+    undefined,
+  ],
+  Array [
+    "INFO",
+    "User has cancelled the authorization method choice",
+    undefined,
+  ],
+]
+`;
+
+exports[`AuthorizeDevice (Logging) should stop the process and logout after the user clicks logout 1`] = `
+Array [
+  Array [
+    "DEBUG",
+    "User has started process: authorize device",
+  ],
+  Array [
+    "INFO",
+    "User has cancelled authorizing the device",
+    undefined,
+  ],
+]
+`;

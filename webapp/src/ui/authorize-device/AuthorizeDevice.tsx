@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
-import { AuthorizeDeviceProcessPrimitive as AuthorizeDeviceProcess } from 'lessons/m6/authorize-device/hooks/AuthorizeDeviceProcessPrimitive';
+// import { AuthorizeDeviceProcessPrimitive as AuthorizeDeviceProcess } from 'lessons/m6/authorize-device/hooks/AuthorizeDeviceProcessPrimitive';
 // import { AuthorizeDeviceProcessUnion as AuthorizeDeviceProcess } from 'lessons/m6/authorize-device/hooks/AuthorizeDeviceProcessUnion';
 // import { AuthorizeDeviceProcessReduxWithStore as AuthorizeDeviceProcess } from 'lessons/m6/authorize-device/redux/AuthorizeDeviceProcessRedux';
 // import { AuthorizeDeviceProcessXState as AuthorizeDeviceProcess } from 'lessons/m6/authorize-device/xstate/AuthorizeDeviceProcessXState';
+import { AuthorizeDeviceWithErrorHandling as AuthorizeDeviceProcess } from 'lessons/m9/process-error-handling/AuthorizeDeviceWithErrorHandling';
 
 import { Button } from 'ui/atoms';
 import { Panel } from 'ui/layout';
