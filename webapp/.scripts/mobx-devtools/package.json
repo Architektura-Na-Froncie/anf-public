@@ -1,0 +1,8 @@
+{
+  "name": "anf-mobx-devtools",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "mobx-devtools": "^0.9.27"
+  }
+}

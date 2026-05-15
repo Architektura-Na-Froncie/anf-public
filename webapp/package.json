@@ -10,7 +10,7 @@
     "dump:deps": "madge --json --include-npm src/index.tsx > deps.json",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "mobx-devtools": "mobx-devtools"
+    "mobx-devtools": "node .scripts/mobx-devtools"
   },
   "dependencies": {
     "@axe-core/react": "^4.4.3",
@@ -57,11 +57,11 @@
     "husky": "^4.3.8",
     "immer": "^9.0.14",
     "isomorphic-fetch": "^3.0.0",
+    "jest": "^27.5.1",
     "jest-axe": "^6.0.0",
     "jest-styled-components": "^7.0.8",
     "madge": "^5.0.1",
     "mobx": "~6.6.0",
-    "mobx-devtools": "^0.9.27",
     "mobx-react-lite": "^3.4.0",
     "msw": "~0.39.2",
     "msw-storybook-addon": "^1.6.3",
