@@ -16,4 +16,4 @@ if (!fs.existsSync(__dirname + '/node_modules/mobx-devtools')) {
   execSync('npm install', { stdio: 'inherit', cwd: __dirname });
 }
 
-execSync('node_modules/.bin/mobx-devtools ' + process.argv.slice(2).join(' '), { stdio: 'inherit', cwd: __dirname });
+execSync('npx mobx-devtools ' + process.argv.slice(2).join(' '), { stdio: 'inherit', cwd: __dirname });
