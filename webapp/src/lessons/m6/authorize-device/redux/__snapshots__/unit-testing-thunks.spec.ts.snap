@@ -1,0 +1,130 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Authorize Device Actions addDeviceCancelThenAllow scenario match actions snapshots 1`] = `
+Array [
+  Object {
+    "payload": undefined,
+    "type": "authorizeDevice/addDeviceForm",
+  },
+  Object {
+    "payload": undefined,
+    "type": "authorizeDevice/loading",
+  },
+  Object {
+    "payload": Object {
+      "deviceName": "mój lapcio",
+      "error": false,
+      "instruction": "Wpisz hasło",
+      "tokenId": "123",
+    },
+    "type": "authorizeDevice/addDeviceToken",
+  },
+  Object {
+    "payload": undefined,
+    "type": "authorizeDevice/cancelChoice",
+  },
+  Object {
+    "payload": undefined,
+    "type": "authorizeDevice/loading",
+  },
+  Object {
+    "payload": Object {
+      "error": false,
+      "instruction": "Wpisz hasło",
+      "tokenId": "123",
+    },
+    "type": "authorizeDevice/allowOnceToken",
+  },
+  Object {
+    "payload": undefined,
+    "type": "authorizeDevice/loading",
+  },
+  Object {
+    "payload": undefined,
+    "type": "authorizeDevice/allowOnceSuccess",
+  },
+]
+`;
+
+exports[`Authorize Device Actions addDeviceSuccess scenario match actions snapshots 1`] = `
+Array [
+  Object {
+    "payload": undefined,
+    "type": "authorizeDevice/addDeviceForm",
+  },
+  Object {
+    "payload": undefined,
+    "type": "authorizeDevice/loading",
+  },
+  Object {
+    "payload": Object {
+      "deviceName": "mój lapcio",
+      "error": false,
+      "instruction": "Wpisz hasło",
+      "tokenId": "123",
+    },
+    "type": "authorizeDevice/addDeviceToken",
+  },
+  Object {
+    "payload": undefined,
+    "type": "authorizeDevice/loading",
+  },
+  Object {
+    "payload": Object {
+      "error": true,
+      "type": "CHOOSE_METHOD",
+    },
+    "type": "authorizeDevice/addDeviceToken",
+  },
+  Object {
+    "payload": undefined,
+    "type": "authorizeDevice/loading",
+  },
+  Object {
+    "payload": Object {
+      "deviceName": undefined,
+    },
+    "type": "authorizeDevice/addDeviceConfirmation",
+  },
+  Object {
+    "payload": undefined,
+    "type": "authorizeDevice/addDeviceSuccess",
+  },
+]
+`;
+
+exports[`Authorize Device Actions allowOnceSuccess scenario match actions snapshots 1`] = `
+Array [
+  Object {
+    "payload": undefined,
+    "type": "authorizeDevice/loading",
+  },
+  Object {
+    "payload": Object {
+      "error": false,
+      "instruction": "Wpisz hasło",
+      "tokenId": "123",
+    },
+    "type": "authorizeDevice/allowOnceToken",
+  },
+  Object {
+    "payload": undefined,
+    "type": "authorizeDevice/loading",
+  },
+  Object {
+    "payload": Object {
+      "error": true,
+      "type": "CHOOSE_METHOD",
+    },
+    "type": "authorizeDevice/allowOnceToken",
+  },
+  Object {
+    "payload": undefined,
+    "type": "authorizeDevice/loading",
+  },
+  Object {
+    "payload": undefined,
+    "type": "authorizeDevice/allowOnceSuccess",
+  },
+]
+`;

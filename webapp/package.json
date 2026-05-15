@@ -42,6 +42,9 @@
     "@types/styled-components": "^5.1.25",
     "@types/uuid": "^8.3.4",
     "@wojtekmaj/enzyme-adapter-react-17": "^0.6.7",
+    "@xstate/inspect": "^0.7.0",
+    "@xstate/react": "^3.0.0",
+    "@xstate/test": "^0.5.1",
     "axe-core": "^4.4.2",
     "axios": "^0.27.2",
     "classnames": "^2.3.1",
@@ -84,7 +87,8 @@
     "uuid": "^8.3.2",
     "web-vitals": "^2.1.4",
     "webpack": "^5.72.1",
-    "webpack-bundle-analyzer": "^4.5.0"
+    "webpack-bundle-analyzer": "^4.5.0",
+    "xstate": "^4.32.1"
   },
   "jest": {
     "snapshotSerializers": [

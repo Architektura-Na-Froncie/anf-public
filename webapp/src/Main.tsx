@@ -6,6 +6,8 @@ import { AppHeader } from 'ui/app/AppHeader';
 import { AppMain } from 'ui/app/AppMain';
 
 import { AccountHistory } from 'ui/transfers/AccountHistory';
+import { AuthorizeDevice } from 'ui/authorize-device/AuthorizeDevice';
+import { ChangeLimits } from 'ui/change-limits/ChangeLimits';
 import { EmployeePlans } from 'ui/employee-plans/EmployeePlans';
 import { ExamPage } from 'ui/tasks/ExamPage';
 import { Welcome } from 'ui/app/Welcome';
@@ -21,8 +23,8 @@ export const Main: React.FC = () => {
           <Route path="/employee-plans" element={<EmployeePlans />} />
           <Route path="/account-history" element={<AccountHistory />} />
           <Route path="/exam" element={<ExamPage />} />
-          <Route path="/authorize-device" element={"Treść pojawi się w module 6: Maszyny stanowe"} />
-          <Route path="/change-limits" element={"Treść pojawi się w module 6: Maszyny stanowe"} />
+          <Route path="/authorize-device" element={<AuthorizeDevice />} />
+          <Route path="/change-limits" element={<ChangeLimits />} />
           <Route path="/currency-exchange" element={"Treść pojawi się w module 8: Programowanie Reaktywne"} />
         </Routes>
       </AppMain>
