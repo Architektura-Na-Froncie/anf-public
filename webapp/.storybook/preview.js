@@ -16,3 +16,12 @@ export const parameters = {
   },
   viewport: { viewports: MINIMAL_VIEWPORTS },
 }
+
+// M7 INTEGRATION TESTING
+// msw-storybook-addon
+
+import { addDecorator } from '@storybook/react';
+import { initialize, mswDecorator } from 'msw-storybook-addon';
+
+initialize({ onUnhandledRequest: 'bypass' });
+addDecorator(mswDecorator);
