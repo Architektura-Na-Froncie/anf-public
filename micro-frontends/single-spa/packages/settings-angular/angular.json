@@ -18,8 +18,8 @@
           "builder": "@angular-builders/custom-webpack:browser",
           "options": {
             "outputPath": "dist/settings-angular",
-            "index": "src/index.html",
-            "main": "src/main.single-spa.ts",
+            "index": "",
+            "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "assets": [
@@ -35,7 +35,7 @@
               "libraryName": "settings-angular",
               "libraryTarget": "umd"
             },
-            "deployUrl": "http://localhost:9005/"
+            "baseHref": "/settings-angular"
           },
           "configurations": {
             "production": {
@@ -67,6 +67,9 @@
               "sourceMap": true,
               "namedChunks": true,
               "outputHashing": "none"
+            },
+            "standalone": {
+              "baseHref": "/"
             }
           },
           "defaultConfiguration": "production"
@@ -79,6 +82,9 @@
             },
             "development": {
               "browserTarget": "settings-angular:build:development"
+            },
+            "standalone": {
+              "browserTarget": "settings-angular:build:development,standalone"
             }
           },
           "defaultConfiguration": "development"

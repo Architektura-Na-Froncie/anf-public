@@ -6,6 +6,8 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { SettingsModule } from './settings/settings.module';
 
+declare const WEBPACK_APP_BASE_HREF: string;
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +18,7 @@ import { SettingsModule } from './settings/settings.module';
     RouterModule.forRoot([]),
   ],
   providers: [
-    { provide: APP_BASE_HREF, useValue: "/settings-angular" },
+    { provide: APP_BASE_HREF, useValue: WEBPACK_APP_BASE_HREF },
   ],
   bootstrap: [AppComponent]
 })
