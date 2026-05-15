@@ -4,24 +4,46 @@
   "scripts": {
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
-    "test": "react-app-rewired test"
+    "test": "react-app-rewired test",
+    "test:unit": "cross-env CI=true react-app-rewired test",
+    "check:circular-deps": "madge --warning --circular --extensions ts,tsx src",
+    "dump:deps": "madge --json --include-npm src/index.tsx > deps.json"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^12.1.4",
-    "@testing-library/user-event": "^14.0.4",
+    "@testing-library/react": "^12.1.5",
+    "@testing-library/user-event": "^14.1.0",
     "@types/jest": "^27.4.1",
-    "@types/node": "^16.0.0",
-    "@types/react-dom": "^17.0.15",
+    "@types/node": "^16.11.27",
     "@types/react": "^17.0.44",
+    "@types/react-dom": "^17.0.15",
+    "@types/simplemde": "^1.11.8",
+    "axios": "^0.26.1",
+    "cross-env": "^7.0.3",
+    "fetch-mock": "^9.11.0",
+    "flush-promises": "^1.0.2",
+    "isomorphic-fetch": "^3.0.0",
+    "madge": "^5.0.1",
+    "msw": "~0.39.2",
+    "prettier": "^2.6.2",
+    "react": "^17.0.2",
     "react-app-rewired": "^2.2.1",
-    "react-dom": "^17.0.1",
-    "react-scripts": "^5.0.0",
-    "react": "^17.0.1",
-    "ts-jest": "^26.4.4",
+    "react-dom": "^17.0.2",
+    "react-scripts": "^5.0.1",
+    "simplemde": "^1.11.2",
+    "ts-jest": "^27.1.4",
     "typescript": "~4.6.3",
-    "web-vitals": "^0.2.4",
+    "web-vitals": "^2.1.4",
     "webpack": "^5.72.0"
+  },
+  "jest": {
+    "snapshotSerializers": [],
+    "modulePathIgnorePatterns": [
+      "m2/setup"
+    ]
+  },
+  "madge": {
+    "tsConfig": "tsconfig.json"
   },
   "browserslist": {
     "production": [

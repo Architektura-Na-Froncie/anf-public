@@ -28,6 +28,7 @@
   ],
   "exclude": [
     "node_modules",
-    "src/lessons/m1"
+    "src/lessons/m1",
+    "src/lessons/m2"
   ]
 }

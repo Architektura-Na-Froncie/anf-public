@@ -1,0 +1,21 @@
+{
+  "name": "anf",
+  "private": true,
+  "scripts": {
+    "test": "mocha spec/**/*.ts -r ts-node/register",
+    "test:watch": "mocha spec/**/*.ts -r ts-node/register --watch-files src,spec --watch",
+    "test:coverage": "nyc npm test"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.1",
+    "@types/mocha": "^9.1.0",
+    "@types/node": "^16.11.27",
+    "chai": "^4.3.6",
+    "mocha": "^9.2.2",
+    "nyc": "^15.1.0",
+    "ts-node": "^10.7.0"
+  },
+  "dependencies": {
+    "typescript": "^4.6.3"
+  }
+}
